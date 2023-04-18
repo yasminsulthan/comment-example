@@ -1,0 +1,13 @@
+ on: push
+ jobs:
+    commit-message-check:
+      runs-on: ubuntu-latest
+      steps:
+          - name: Add reactions
+            uses: peter-evans/create-or-update-comment@v3
+            with:
+             comment-id: 1512508325
+             reactions: |
+              heart
+              hooray
+              laugh
